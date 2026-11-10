@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Hassan | Climate Leader & IT Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        },
+                        dark: {
+                            900: '#0b1311',
+                            800: '#111c18',
+                            700: '#192822'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1311;
+            color: #e2e8f0;
+        }
+        .glass-card {
+            background: rgba(17, 28, 24, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(16, 185, 129, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-emerald-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold tracking-tight text-emerald-400 flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-emerald-500"></i> Ali Hassan
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-emerald-400 transition-colors">About</a>
+                <a href="#projects" class="text-slate-300 hover:text-emerald-400 transition-colors">Projects & Initiatives</a>
+                <a href="#skills" class="text-slate-300 hover:text-emerald-400 transition-colors">Skills</a>
+                <a href="#contact" class="px-4 py-2 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-900/40">Get in Touch</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-emerald-400 focus:outline-none text-xl p-2" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800 border-b border-emerald-900/30 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-emerald-400 font-medium">About</a>
+            <a href="#projects" class="block text-slate-300 hover:text-emerald-400 font-medium">Projects & Initiatives</a>
+            <a href="#skills" class="block text-slate-300 hover:text-emerald-400 font-medium">Skills</a>
+            <a href="#contact" class="block text-emerald-400 font-medium">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center">
+        <!-- Glow background accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-800/60 text-emerald-400 text-xs font-semibold mb-6 uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Climate Advocate & IT Professional
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+                    Bridging <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Technology</span> & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Climate Action</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
+                    Hi, I'm <strong class="text-white">Ali Hassan</strong> from Lahore, Pakistan. I leverage digital innovation, software development, and grassroots advocacy to engineer sustainable solutions for a resilient future.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-emerald-600 text-white font-medium hover:bg-emerald-500 transition-all flex items-center gap-2 shadow-lg shadow-emerald-900/40">
+                        Explore My Work <i class="fa-solid fa-arrow-down text-sm"></i>
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl glass-card text-slate-200 font-medium hover:border-emerald-500 transition-all">
+                        Let's Collaborate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-dark-800/50 border-t border-emerald-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-4 border border-emerald-800/40 shadow-2xl">
+                        <img src="https://placehold.co/600x700/0b1311/34d399?text=Ali+Hassan+Profile" alt="Ali Hassan" class="rounded-xl w-full object-cover aspect-[4/5]" onerror="this.src='https://placehold.co/600x700/0b1311/10b981?text=Ali+Hassan'">
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-dark-900/90 backdrop-blur border border-emerald-800/50">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Youth Innovation Award</h4>
+                                    <p class="text-xs text-slate-400">Recognized for grassroots climate tech solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-user-shield"></i> About Me
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Empowering Communities Through Code & Climate Policy
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        I am a dedicated youth climate leader and IT professional combining technical expertise with environmental advocacy. My work sits at the intersection of software engineering and sustainability—designing digital volunteer portals, organizing climate awareness campaigns, and engaging with regional policy frameworks.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Having received recognition for youth innovation, I am deeply committed to mobilizing digital tools to streamline climate action, foster community engagement, and amplify grassroots voices on global platforms.
+                    </p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4">
+                        <div class="glass-card p-4 rounded-xl border border-emerald-900/40">
+                            <div class="text-2xl font-bold text-emerald-400 mb-1">3+</div>
+                            <div class="text-xs text-slate-400">Years in Climate Advocacy</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-emerald-900/40">
+                            <div class="text-2xl font-bold text-emerald-400 mb-1">5+</div>
+                            <div class="text-xs text-slate-400">Digital Portals & Apps Built</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-emerald-900/40 col-span-2 sm:col-span-1">
+                            <div class="text-2xl font-bold text-emerald-400 mb-1">Global</div>
+                            <div class="text-xs text-slate-400">Youth Network Engagement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Initiatives Section -->
+    <section id="projects" class="py-20 border-t border-emerald-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-code-branch"></i> Portfolio
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Projects & Climate Initiatives</h2>
+                <p class="text-slate-400">Explore my work developing digital volunteer platforms, climate advocacy campaigns, and tech-driven sustainability initiatives.</p>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-emerald-900/40 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-800/50">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">EcoVolunteer Admin Portal</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            A comprehensive digital administration portal designed to coordinate climate volunteers, track grassroots afforestation campaigns, and manage event participation seamlessly.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Full Stack Web</span>
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Database Management</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/60 border-t border-emerald-900/30 flex justify-between items-center text-sm">
+                        <span class="text-emerald-400 font-medium">Active Initiative</span>
+                        <a href="#contact" class="text-slate-300 hover:text-white flex items-center gap-1 transition-colors">Details <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-emerald-900/40 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-800/50">
+                            <i class="fa-solid fa-earth-asia"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">GreenPolicy Youth Advocacy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            A regional advocacy initiative bridging young climate activists and policymakers through policy briefs, public town halls, and digital awareness campaigns.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Policy Writing</span>
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Community Outreach</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/60 border-t border-emerald-900/30 flex justify-between items-center text-sm">
+                        <span class="text-emerald-400 font-medium">Award Recognized</span>
+                        <a href="#contact" class="text-slate-300 hover:text-white flex items-center gap-1 transition-colors">Details <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-emerald-900/40 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-800/50">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Climate Tech Resource Hub</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            An open web repository providing educational toolkits, renewable energy guides, and project templates for youth-led climate ventures across developing regions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Web Development</span>
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-950/80 text-emerald-400 text-xs font-medium border border-emerald-800/40">Open Source</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/60 border-t border-emerald-900/30 flex justify-between items-center text-sm">
+                        <span class="text-emerald-400 font-medium">Ongoing Project</span>
+                        <a href="#contact" class="text-slate-300 hover:text-white flex items-center gap-1 transition-colors">Details <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-dark-800/50 border-t border-emerald-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Technical & Policy Expertise</h2>
+                <p class="text-slate-400">A blend of robust IT skills and deep engagement with climate governance and sustainable development frameworks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- IT & Web Dev -->
+                <div class="glass-card p-8 rounded-2xl border border-emerald-900/40 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-800/50">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">IT & Web Development</h3>
+                            <p class="text-slate-400 text-xs">Modern software engineering stack</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Frontend (HTML5, CSS3, Tailwind, JavaScript)</span>
+                                <span class="text-emerald-400 font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-emerald-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Backend & Admin Portal Systems</span>
+                                <span class="text-emerald-400 font-semibold">85%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-emerald-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Database & Tooling (SQL, Git, APIs)</span>
+                                <span class="text-emerald-400 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-emerald-500 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climate Governance & Policy -->
+                <div class="glass-card p-8 rounded-2xl border border-emerald-900/40 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-800/50">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Climate Governance & Policy</h3>
+                            <p class="text-slate-400 text-xs">Advocacy and strategic planning</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Climate Policy Analysis & Writing</span>
+                                <span class="text-emerald-400 font-semibold">88%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-teal-400 h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Grassroots Campaign Strategy</span>
+                                <span class="text-emerald-400 font-semibold">92%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-teal-400 h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-slate-300 font-medium">Cross-Cultural Communication & Leadership</span>
+                                <span class="text-emerald-400 font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-dark-900 rounded-full h-2 border border-emerald-900/50">
+                                <div class="bg-teal-400 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 border-t border-emerald-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold uppercase tracking-wider">
+                        <i class="fa-regular fa-paper-plane"></i> Get in Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Let's Connect & Build a Sustainable Future Together
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Whether you want to discuss climate policy collaboration, IT solutions for environmental initiatives, or fellowship opportunities, my inbox is always open.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 border border-emerald-800/50">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Email Me</div>
+                                <a href="mailto:alihassanmaitla007@gmail.com" class="text-white font-medium hover:text-emerald-400 transition-colors">alihassanmaitla007@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-950 flex items-center justify-center text-emerald-400 border border-emerald-800/50">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Location</div>
+                                <div class="text-white font-medium">Lahore, Pakistan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 pt-4">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500 transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500 transition-all">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500 transition-all">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-8 rounded-2xl border border-emerald-900/40">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-emerald-900/50 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Your Email</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-emerald-900/50 text-white focus:outline-none focus:border-emerald-500 transition-colors" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-dark-900 border border-emerald-900/50 text-white focus:outline-none focus:border-emerald-500 transition-colors resize-none" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 text-white font-medium hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-900/40 flex items-center justify-center gap-2">
+                            Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                        <div id="form-success" class="hidden text-emerald-400 text-sm text-center font-medium bg-emerald-950/60 p-3 rounded-xl border border-emerald-800/40">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-dark-900 border-t border-emerald-900/30 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>&copy; 2026 Ali Hassan. All rights reserved.</div>
+            <div class="flex items-center gap-1 text-emerald-400">
+                <i class="fa-solid fa-leaf text-xs"></i> Built for Climate Impact
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact form submission handler (simulation)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            const form = document.getElementById('contact-form');
+            
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
